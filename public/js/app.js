@@ -1,4 +1,4 @@
-console.log('clint side javascript  file is loaded . it is showoing only on terminal')
+//console.log('clint side javascript  file is loaded . it is showoing only on terminal')
     
 
 
