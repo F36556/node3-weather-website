@@ -3,8 +3,10 @@ const express = require ('express')
 const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
+const { env } = require('process')
 
 const app = express()
+const port = process.env.PORT ||5000
 
 const publicdirctorypath = path.join(__dirname ,  '../public')
 const viewspath = path.join(__dirname,'../templates/views')
@@ -85,6 +87,6 @@ app.get('*',(req,res)=>{
     })})
 
 
-app.listen(5000,()=>{
-    console.log('sever is runing')
+app.listen(port,()=>{
+    console.log('sever is runing'+port)
 })
